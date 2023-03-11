@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--
+        grid 隔線系統適用 flex 實現
+        
+        Available Breakpoints: 根據螢幕寬度判斷是 extra-sm, sm, md, lg, x-lg, xx-lg
+        通常 sm 是手機、md 是平板直向, lg 是平板橫向
+
+
+        container定寬容器
+        根據螢幕寬度，固定寬度
+
+
+        row 做下面三件事
+        讓 flex 內部可以做橫向排列
+        flex-wrap 換行
+        處理 margin-left and margin-right，達成居中
+
+        設定在每個 col 有點麻煩，也可在 row 處理（邏輯反過來）
+        row row-cols-md-3 row-cols-lg-4 row-cols-xl-6
+
+        col
+        根據寬度決定欄位：col-12 col-md-4 col-lg-3 col-xl-2 col-xl-1
+
+        g 設定 padding 來改變欄間距
+        g-0 -> 欄間距 0
+        g-5 -> 欄間距 5
+    -->
+    <div class="container">
+        <div class="g-1 row row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+                <div class="item">
+                    <img src="https://picsum.photos/300/200?random=10" class="w-100">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse culpa corporis suscipit itaque, odit facilis blanditiis delectus nihil explicabo, aliquid voluptate, autem debitis molestias accusantium mollitia quas totam. Deleniti!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <img src="https://picsum.photos/300/200?random=10" class="w-100">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse culpa corporis suscipit itaque, odit facilis blanditiis delectus nihil explicabo, aliquid voluptate, autem debitis molestias accusantium mollitia quas totam. Deleniti!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <img src="https://picsum.photos/300/200?random=10" class="w-100">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse culpa corporis suscipit itaque, odit facilis blanditiis delectus nihil explicabo, aliquid voluptate, autem debitis molestias accusantium mollitia quas totam. Deleniti!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <img src="https://picsum.photos/300/200?random=10" class="w-100">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse culpa corporis suscipit itaque, odit facilis blanditiis delectus nihil explicabo, aliquid voluptate, autem debitis molestias accusantium mollitia quas totam. Deleniti!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <img src="https://picsum.photos/300/200?random=10" class="w-100">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse culpa corporis suscipit itaque, odit facilis blanditiis delectus nihil explicabo, aliquid voluptate, autem debitis molestias accusantium mollitia quas totam. Deleniti!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <img src="https://picsum.photos/300/200?random=10" class="w-100">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse culpa corporis suscipit itaque, odit facilis blanditiis delectus nihil explicabo, aliquid voluptate, autem debitis molestias accusantium mollitia quas totam. Deleniti!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>  </body>
+</html>
